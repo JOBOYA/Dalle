@@ -10,7 +10,7 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({ origin: 'http://localhost:8080/api/v1/post', credentials: true }));
+
 
 app.use(express.json({ limit: '50mb' }));
 
