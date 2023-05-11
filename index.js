@@ -13,6 +13,9 @@ const app = express();
 
 
 app.use(express.json({ limit: '50mb' }));
+app.use(cors({
+  origin: 'https://kaleidoscopic-fairy-23defb.netlify.app'
+}));
 
 app.use('/api/v1/post', postRoutes);
 app.use('/api/v1/dalle', dalleRoutes);
