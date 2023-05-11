@@ -1,6 +1,12 @@
 import express from 'express';
 import * as dotenv from 'dotenv';
 import { Configuration, OpenAIApi } from 'openai';
+import axios from 'axios';
+
+axios.defaults.headers.common['Authorization'] = `Bearer ${process.env.OPENAI_API_KEY}`;
+
+
+
 
 dotenv.config();
 
